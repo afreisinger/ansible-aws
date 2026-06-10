@@ -1,0 +1,17 @@
+---
+aws_users:
+  - name: afreisinger
+    password: "{{ vault_afreisinger_password }}"
+    groups:
+      - users
+    sudo: true
+    github_user: afreisinger
+
+  - name: claude
+    password: "{{ vault_claude_password }}"
+    groups:
+      - users
+    sudo: false
+    github_user: afreisinger
+
+aws_root_password: "{{ vault_root_password }}"

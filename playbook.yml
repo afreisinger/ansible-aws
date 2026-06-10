@@ -1,0 +1,7 @@
+---
+- name: Configure AWS Ubuntu instances
+  hosts: all
+  become: true
+
+  roles:
+    - role: afreisinger.aws

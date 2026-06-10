@@ -1,0 +1,8 @@
+---
+roles:
+  - name: afreisinger.aws
+    src: https://github.com/afreisinger/ansible-role-aws
+    version: main
+
+collections:
+  - name: ansible.posix
